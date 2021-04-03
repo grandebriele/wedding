@@ -1,1 +1,0 @@
-alert('Ciccio Bello');
