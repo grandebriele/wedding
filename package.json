@@ -4,19 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "development": "mix",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
-    "production": "mix --production"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grandebriele/wedding.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grandebriele/wedding/issues"
+  },
+  "homepage": "https://github.com/grandebriele/wedding#readme",
   "devDependencies": {
-    "laravel-mix": "^6.0.13",
+    "laravel-mix": "^6.0.16",
     "resolve-url-loader": "^3.1.2",
     "sass": "^1.32.8",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^11.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.6.0",
+    "jquery-countdown": "^2.2.0"
   }
 }

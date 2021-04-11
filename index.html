@@ -2,32 +2,58 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Gabriele & Caterina sposi</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://revpowers.com/wp-content/uploads/2017/01/Favicon2.png" />
 
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/app.css">
   </head>
   <body>
-    
+
     <header>
 
-      <nav>
-        <ul class="hamburger">
-          <li class="item item-1">La Nostra Storia</li>
-          <li class="item item-2">Album Matrimonio</li>
-          <li class="item item-3">Contatti</li>
-          <li class="item item-4">Regalaci</li>
-        </ul>
-      </nav>
+      <div class="container-fluid">
 
-      <div class="hero">
-        <h1>Gabriele & Caterina</h1>
-        <p>sposi</p>
-      </div>
+        <div class="row navbar-menu">
+          <div class="col logo">
+            <h1>Gabriele <small>&</small> Caterina</h1>
+          </div>
+          <nav class="col hamburger">
+              <div>
+                <i class="fas fa-bars"></i>
+                <span class="menu-text"> MENU</span>
+              </div>
+          </nav>
+        </div>
+
+        <div class="row">
+          <div class="hero col">
+            <img src="https://i.ibb.co/80w24f2/Gabriele.png" alt="Gabriele" class="hero__image-gabriele">
+            <div class="hero__testo">
+              <h1>Gabriele <small>&</small> Caterina</h1>
+              <p>sposi</p>
+            </div>
+            <img src="https://i.ibb.co/g7kzZSY/Caterina.png" alt="Caterina" class="hero__image-caterina">
+          </div>
+        </div>
+
+      </div> <!-- END CONTAINER -->
 
     </header>
 
-    <script src="dist/main.js" charset="utf-8"></script>
+    <main>
+      <div class="countdown-wrapper">
+        <div class="save-the-date"> Manca poco </div>
+        <section id="countdown">
+          <!-- Countdown from Javascript -->
+        </section>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="dist/app.js" charset="utf-8"></script>
   </body>
 </html>

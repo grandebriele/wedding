@@ -1,20 +1,62 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/script/main.js":
-/*!****************************!*\
-  !*** ./src/script/main.js ***!
-  \****************************/
+/***/ "./src/js/app.js":
+/*!***********************!*\
+  !*** ./src/js/app.js ***!
+  \***********************/
 /***/ (() => {
 
+$(document).ready(function () {
+  // Set the date we're counting down to
+  var countDownDate = new Date("jun 26, 2021 15:30:00").getTime(); // Update the count down every 1 second
 
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime(); // Find the distance between now and the count down date
+
+    var distance = countDownDate - now; // Time calculations for days, hours, minutes and seconds
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    if (days < 10) {
+      days = "0" + days;
+    }
+
+    var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+
+    if (hours < 10) {
+      hours = "0" + hours;
+    }
+
+    var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+
+    var seconds = Math.floor(distance % (1000 * 60) / 1000);
+
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    } // Output the result in an element with id="demo"
+
+
+    document.getElementById("countdown").innerHTML = "<span class='manca-poco'>" + "<span>" + days + "<div>giorni</div>" + "</span>" + "&nbsp;:&nbsp;" + "<span>" + hours + "<div>ore</div>" + "</span>" + "&nbsp;:&nbsp;" + "<span>" + minutes + "<div>minuti</div>" + "</span>" + "&nbsp;:&nbsp;" + "<span class='secondi'>" + seconds + "<div>secondi</div>" + "</span>" + "</span>"; // If the count down is over, write some text
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "<span class='auguri-sposi'>Auguri agli Sposi!</span>";
+    }
+  }, 1000);
+});
 
 /***/ }),
 
-/***/ "./src/sass/style.scss":
-/*!*****************************!*\
-  !*** ./src/sass/style.scss ***!
-  \*****************************/
+/***/ "./src/sass/app.scss":
+/*!***************************!*\
+  !*** ./src/sass/app.scss ***!
+  \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -109,8 +151,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/main": 0,
-/******/ 			"style": 0
+/******/ 			"/app": 0,
+/******/ 			"app": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -158,8 +200,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["style"], () => (__webpack_require__("./src/script/main.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["style"], () => (__webpack_require__("./src/sass/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["app"], () => (__webpack_require__("./src/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["app"], () => (__webpack_require__("./src/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

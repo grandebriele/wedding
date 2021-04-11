@@ -1,15 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
-  background-image: url("../../../dist/images/livello-2.jpg");
+  background: $terzo url('https://i.ibb.co/6nDWZdP/sfondo-fiori.jpg');
   background-repeat: repeat;
-  background-size: cover;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Tangerine', cursive;
   color: $primo;
 }
 
 p {
-  font-family: 'Tangerine', cursive;
-  color: $secondo;
+  font-family: 'Poppins', sans-serif;
+  color: $primo;
 }

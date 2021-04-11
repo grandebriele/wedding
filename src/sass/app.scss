@@ -1,0 +1,13 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+//
+@import 'partials/_global';
+@import 'partials/_variables';
+@import 'partials/_mix';
+@import 'partials/_common';
+@import 'partials/_header';
+@import 'partials/_footer';
+@import 'partials/_home-content';

@@ -1,0 +1,138 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .navbar-menu {
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 9999;
+
+    .logo {
+      height: 100%;
+      @include my-flex(flex-start, center, row);
+      padding-right: 0px;
+
+      h1 {
+        width: 150px;
+        font-size: 30px;
+      }
+
+      small {
+        font-size: 20px;
+      }
+    }
+
+    .hamburger {
+      @include my-flex(flex-end, center, row);
+      height: 100%;
+      color: $primo;
+      padding-left: 0px;
+
+      & > div {
+        width: 76px;
+        @include my-flex(center, center, row);
+        transition: 300ms;
+        cursor: pointer;
+        padding: 5px 0px;
+
+        &:hover {
+          background-color: $quarto;
+        }
+
+        .menu-text {
+          font-size: 14px;
+          margin-left: 5px;
+          margin-top: -2px
+        }
+
+        .modal-menu {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .hero {
+    width: 100%;
+    height: 100vh;
+    @include my-flex (center, center, row);
+    position: relative;
+
+    &__testo {
+      @include my-flex (center, center, column);
+      z-index: 999;
+
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        bottom: 50px;
+      }
+
+      h1 {
+        font-size: clamp(50px, 8vw, 180px);
+        font-weight: 400;
+        color: #fff;
+
+        small {
+          font-size: clamp(30px, 5vw, 120px);
+        }
+      }
+
+      p {
+        font-family: 'Tangerine', cursive;
+        font-size: 50px;
+        margin-top: -50px;
+        color: #fff;
+
+        @include media-breakpoint-down(md) {
+          font-size: 30px;
+          margin-top: -30px;
+        }
+      }
+    }
+
+    &__image-gabriele {
+      height: 85%;
+      width: auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include media-breakpoint-down(md) {
+        left: -50px;
+      }
+    }
+
+    &__image-caterina {
+      height: 75%;
+      width: auto;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @include media-breakpoint-down(md) {
+        transform: rotateY(180deg);
+        left: -80px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END
