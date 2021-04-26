@@ -30,12 +30,12 @@
           line-height: 1;
           letter-spacing: 0.3rem;
           margin-bottom: 50px;
-          z-index: 90;
+          z-index: 999;
         }
 
         &::before {
           content: '&';
-          color: $secondo;
+          color: $terzo;
           opacity: 0.18;
           font-size: 11rem;
           font-family: 'PlayfairDisplay-Bold';
