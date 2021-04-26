@@ -1,42 +1,52 @@
 main {
   width: 100%;
-  height: 700px;
   background-color: #fff;
-  @include my-flex(center, center, row);
+  @include my-flex(center, center, column);
 
-  @include media-breakpoint-down(md) {
-    height: 400px;
-  }
 
-  .countdown-wrapper {
+
+
+  // * * * COUNTDOWN * * *
+  #countdown-wrapper {
     position: relative;
-    padding: 50px 70px;
-    width: 70%;
-    border: 1px solid $terzo;
     @include my-flex(center, center, column);
+    padding-top: 150px;
+    padding-bottom: 150px;
 
-    @include media-breakpoint-down(sm) {
-      padding: 30px 50px;
+    &::before {
+      content: '';
+      width: 2px;
+      height: 100px;
+      background-color: $terzo;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .manca-poco {
+      font-size: clamp(1rem, 2.3vw, 3rem);
+      color: $terzo;
+      font-weight: 700;
+      line-height: 0.8rem;
+      white-space: nowrap;
+      margin-bottom: 20px;
     }
 
     #countdown {
-      width: 100%;
-      @include my-flex(center, center, row);
+      @include my-flex(flex-start, center, row);
 
-      .manca-poco {
-        @include my-flex(center, center, row);
-        font-size: clamp(30px, 8vw, 150px);
-        font-family: 'Poppins', sans-serif;
-        white-space: nowrap;
+      .timer {
+        @include my-flex(center, flex-start, row);
 
         span {
-          @include my-flex(center, center, column);
-          font-size: clamp(30px, 8vw, 150px);
-          font-family: 'Poppins', sans-serif;
+          @include my-flex(center, flex-start, column);
+          font-size: clamp(1.3rem, 3vw, 5rem);
+          font-family: 'JosefinSans', sans-serif;
           white-space: nowrap;
 
           & > div {
-            font-size: clamp(16px, 3vw, 20px);
+            font-size: clamp(0.7rem, 1.2vw, 1.3rem);
 
             @include media-breakpoint-down(sm) {
               display: none;
@@ -44,7 +54,7 @@ main {
           }
 
           &.secondi {
-            width: clamp(40px, 11vw, 400px);
+            width: clamp(1rem, 3vw, 3rem);
             @include my-flex(center, flex-start, column);
           }
         }
@@ -52,8 +62,8 @@ main {
     }
 
     .save-the-date {
-      font-size: clamp(21px, 5vw, 45px);
-      font-family: 'Poppins', sans-serif;
+      font-size: clamp(0.8rem, 2vw, 2rem);
+      font-family: 'JosefinSans', sans-serif;
       background-color: #fff;
       color: $terzo;
       position: absolute;
@@ -66,4 +76,164 @@ main {
       }
     }
   }
+
+
+
+
+  // * * * CHI SIAMO * * *
+
+  .chi-siamo {
+    width: 100%;
+    background-color: $secondo;
+    padding-top: 150px;
+    padding-bottom: 25px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 200px;
+      background-color: $secondo;
+      position: absolute;
+      bottom: -200px;
+      left: 0;
+    }
+
+    &--text {
+      // padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &--title {
+      font-size: 1.7rem;
+      color: $primo;
+    }
+
+    &--description {
+      font-size: clamp(0.6rem, 1.6vw, 1rem);
+
+      strong {
+        color: $primo;
+      }
+    }
+
+    &--image {
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 30px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: -20px top;
+      }
+    }
+  }
+
+
+  // PHOTOWALL
+
+  .photo-wall-wrap {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 999;
+
+    .photo-wall {
+      display: grid;
+      grid-template-rows: minmax(200px, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 25px 25px;
+      grid-template-areas:
+      "photo-1 photo-1 photo-2"
+      "photo-1 photo-1 photo-3"
+      "photo-4 photo-5 photo-6";
+      padding-left: 15px;
+      padding-right: 15px;
+
+      @include media-breakpoint-down(md) {
+        grid-template-areas:
+        "photo-1 photo-1"
+        "photo-1 photo-1"
+        "photo-2 photo-3"
+        "photo-4 photo-5"
+        "photo-6 photo-6"
+        "photo-6 photo-6";
+      }
+
+      @include media-breakpoint-down(xs) {
+        grid-template-areas:
+        "photo-1"
+        "photo-2"
+        "photo-3"
+        "photo-4"
+        "photo-5"
+        "photo-6";
+
+        grid-gap: 15px 15px;
+      }
+
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .photo-1 {
+        grid-area: photo-1;
+      }
+
+      .photo-2 {
+        grid-area: photo-2;
+      }
+
+      .photo-3 {
+        grid-area: photo-3;
+      }
+
+      .photo-4 {
+        grid-area: photo-4;
+      }
+
+      .photo-5 {
+        grid-area: photo-5;
+      }
+
+      .photo-6 {
+        grid-area: photo-6;
+      }
+    }
+  }
+
+
+
+
+
+  // * * * LOCATION * * *
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END

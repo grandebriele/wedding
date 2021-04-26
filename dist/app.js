@@ -17,19 +17,19 @@ $(document).ready(function () {
 
     var distance = countDownDate - now; // Time calculations for days, hours, minutes and seconds
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24)) + "&nbsp;:&nbsp;";
 
     if (days < 10) {
       days = "0" + days;
     }
 
-    var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)) + "&nbsp;:&nbsp;";
 
     if (hours < 10) {
       hours = "0" + hours;
     }
 
-    var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+    var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60)) + "&nbsp;:&nbsp;";
 
     if (minutes < 10) {
       minutes = "0" + minutes;
@@ -42,13 +42,22 @@ $(document).ready(function () {
     } // Output the result in an element with id="demo"
 
 
-    document.getElementById("countdown").innerHTML = "<span class='manca-poco'>" + "<span>" + days + "<div>giorni</div>" + "</span>" + "&nbsp;:&nbsp;" + "<span>" + hours + "<div>ore</div>" + "</span>" + "&nbsp;:&nbsp;" + "<span>" + minutes + "<div>minuti</div>" + "</span>" + "&nbsp;:&nbsp;" + "<span class='secondi'>" + seconds + "<div>secondi</div>" + "</span>" + "</span>"; // If the count down is over, write some text
+    document.getElementById("countdown").innerHTML = "<span class='timer'>" + "<span>" + days + "<div>giorni</div>" + "</span>" + "<span>" + hours + "<div>ore</div>" + "</span>" + "<span>" + minutes + "<div>minuti</div>" + "</span>" + "<span class='secondi'>" + seconds + "<div>secondi</div>" + "</span>" + "</span>"; // If the count down is over, write some text
 
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("countdown").innerHTML = "<span class='auguri-sposi'>Auguri agli Sposi!</span>";
     }
-  }, 1000);
+  }, 1000); // * * * MODAL MOBILE MENU
+
+  $(".icon-menu").click(function () {
+    $('.nav-menu-wrapper, #hero, main, footer').hide();
+    $(".modal-menu-wrap").addClass("active");
+  });
+  $(".modal-menu-close").click(function () {
+    $('.nav-menu-wrapper, #hero, main, footer').show();
+    $(".modal-menu-wrap").removeClass("active");
+  });
 });
 
 /***/ }),

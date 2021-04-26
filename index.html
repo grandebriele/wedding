@@ -6,8 +6,8 @@
     <title>Gabriele & Caterina sposi</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://revpowers.com/wp-content/uploads/2017/01/Favicon2.png" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="dist/app.css">
   </head>
@@ -15,45 +15,137 @@
 
     <header>
 
-      <div class="container-fluid">
+      <div class="container nav-menu-wrapper">
 
-        <div class="row navbar-menu">
+        <div class="row">
+          <div class="col navbar-menu">
+            <ul class="menu-left">
+              <li>Su di noi</li>
+              <li>Location</li>
+            </ul>
+            <div class="logo">
+              <h1>Gabriele <small>&</small> Caterina</h1>
+            </div>
+            <ul class="menu-right">
+              <li>Conferma presenza</li>
+              <li>Contattaci</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row hamburger">
+
           <div class="col logo">
             <h1>Gabriele <small>&</small> Caterina</h1>
           </div>
-          <nav class="col hamburger">
-              <div>
-                <i class="fas fa-bars"></i>
-                <span class="menu-text"> MENU</span>
-              </div>
-          </nav>
-        </div>
-
-        <div class="row">
-          <div class="hero col">
-            <img src="https://i.ibb.co/80w24f2/Gabriele.png" alt="Gabriele" class="hero__image-gabriele">
-            <div class="hero__testo">
-              <h1>Gabriele <small>&</small> Caterina</h1>
-              <p>sposi</p>
+          <div class="col icon-menu-wrap">
+            <div class="icon-menu">
+              <div class="icon-menu--bar"></div>
             </div>
-            <img src="https://i.ibb.co/g7kzZSY/Caterina.png" alt="Caterina" class="hero__image-caterina">
+          </div>
+        </div>
+      </div> <!-- END CONTAINER -->
+
+      <div class="col modal-menu-wrap">
+        <ul class="modal-menu-list">
+          <li>Su di noi</li>
+          <li>Location</li>
+          <li>Conferma presenza</li>
+          <li>Contattaci</li>
+        </ul>
+        <div class="modal-logo">
+          <h1>Gabriele <small>&</small> Caterina</h1>
+        </div>
+        <div class="modal-menu-close">
+          <div class="close-menu-icon"></div>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="container">
+        <div class="row hero flex-wrap">
+          <div class="col-lg-6 hero--text ">
+            <div class="hero--text--title">
+              <h1>Gabriele Mercurio</h1>
+              <h1>Caterina Pradella</h1>
+            </div>
+            <p>Vi annunciamo con gioia <strong>il nostro matrimonio</strong> il 26 giugno 2021, alle ore 15:30. <strong>La meta tanto attesa</strong> dopo un bellissimo cammino di discernimento assieme.</p>
+          </div>
+          <div class="col-lg-6 hero--image">
+            <img src="https://i.ibb.co/TLHWyxV/1616327749188-1.jpg" alt="image-hero">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="countdown-wrapper">
+        <span class="manca-poco">Manca poco: </span>
+        <span id="countdown">
+          <!-- Countdown from Javascript -->
+        </span>
+      </section>
+
+      <section class="chi-siamo">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 chi-siamo--image">
+              <img src="https://i.ibb.co/FbWxLCJ/1616327841174-1.jpg">
+            </div>
+            <div class="chi-siamo--text col-lg-6">
+              <h1 class="chi-siamo--title">Su di noi</h1>
+              <p class="chi-siamo--description">
+                La nostra storia ha inizio <strong>nel lontano 2016</strong>, durante gli anni universitari, quando <strong>un siciliano</strong>, trasferitosi al nord, conosce una dolce <strong>donzella friulana</strong>, di cui si innamora perdutamente.
+                Dopo lunghi mesi di corteggiamento, <strong>la donzella cede al fascino terrone</strong>.
+              </p>
+              <p class="chi-siamo--description">
+                Comincia così l'avventura di <strong>due giovani innamorati</strong>, che tra un frico e un'arancinA, seminano giorno dopo giorno gli ingredienti <strong>per costruire un rapporto solido e duraturo</strong>, fatto di reciprocità, accoglienza e sincerità.
+                Dopo quasi 5 anni decidono con gioia di sposarsi e <strong>portare a compimento un progetto di vita meraviglioso</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photo-wall-wrap">
+        <div class="container">
+          <div class="row photo-wall">
+            <img class="photo-1" src="https://i.ibb.co/PW4Vjg9/photo-0000-1616327749201.jpg">
+            <img class="photo-2" src="https://i.ibb.co/6DRDdpZ/photo-0001-IMG-8282.jpg">
+            <img class="photo-3" src="https://i.ibb.co/P49DJHG/photo-0002-1616327841196.jpg">
+            <img class="photo-4" src="https://i.ibb.co/Xz7dGrg/photo-0003-1616327841180.jpg">
+            <img class="photo-5" src="https://i.ibb.co/JcFfbGj/photo-0004-1616327841163.jpg">
+            <img class="photo-6" src="https://i.ibb.co/q5MdJ34/photo-0005-1616327749221.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section class="mappa-wrap">
+
+        <div class="container">
+          <div class="row">
+            <div class="col mappa"></div>
+            <div class="col indirizzo"></div>
           </div>
         </div>
 
-      </div> <!-- END CONTAINER -->
-
-    </header>
-
-    <main>
-      <div class="countdown-wrapper">
-        <div class="save-the-date"> Manca poco </div>
-        <section id="countdown">
-          <!-- Countdown from Javascript -->
-        </section>
-      </div>
+      </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="dist/app.js" charset="utf-8"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- END -->

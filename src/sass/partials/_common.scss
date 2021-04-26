@@ -2,21 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+}
+
+@font-face {
+  font-family: 'Right Strongline';
+  src: url('../../font/Right Strongline.ttf');
+  font-family: 'JosefinSans';
+  src: url('../../font/JosefinSans.ttf');
 }
 
 body {
-  background: $terzo url('https://i.ibb.co/6nDWZdP/sfondo-fiori.jpg');
-  background-repeat: repeat;
+  font-family: 'JosefinSans', sans-serif;
+  color: #222;
 }
 
-h1 {
-  font-family: 'Tangerine', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'PlayfairDisplay-Bold', cursive;
   color: $primo;
 }
 
-p {
-  font-family: 'Poppins', sans-serif;
-  color: $primo;
+strong {
+  font-family: 'JosefinSans', sans-serif;
+  color: $terzo;
+  font-weight: 900;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }

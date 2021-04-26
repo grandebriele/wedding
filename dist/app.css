@@ -16078,281 +16078,364 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
-/*!
- * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-  font-family: "Font Awesome 5 Brands";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?89a52ae1d02b86d6143987c865471c24);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?89a52ae1d02b86d6143987c865471c24) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?c1210e5ebe4344da508396540be7f52c) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?329a95a9172fdb2cccb4f9347ed55233) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?9e138496e8f1719c6ebf0abe50563635) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?216edb96b562c79adc09e2d3c63db7c0) format("svg");
-}
-.fab {
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-}
-
-/*!
- * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?4079ae2d2a15d0689568f3a5459241c7);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?4079ae2d2a15d0689568f3a5459241c7) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?68c5af1f48e2bfca1e57ae1c556a5c72) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?3672264812746c3c7225909742da535c) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?1017bce89c72f95bcf8e2bf4774efdbf) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?19e27d348fefc21941e0310a0ec6339b) format("svg");
-}
-.far {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-}
-
-/*!
- * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?efbd5d20e407bbf85f2b3087ee67bfa1);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?efbd5d20e407bbf85f2b3087ee67bfa1) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?ada6e6df937f7e5e8b790dfea07109b7) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?c6ec080084769a6d8a34ab35b77999cd) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?07c3313b24f7b1ca85ee99b4fa7db55e) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?13de59f1a36b6cb4bca0050160ff0e41) format("svg");
-}
-.fa,
-.fas {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+html {
+  font-size: 32px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Right Strongline";
+  src: url("/fonts/Right Strongline.ttf?9942dc412bad7f98c625989f9fc54acd");
+  font-family: "JosefinSans";
+  src: url(/fonts/JosefinSans.ttf?89302acc0a1111132060ca65fbd89b90);
+}
+body {
+  font-family: "JosefinSans", sans-serif;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "PlayfairDisplay-Bold", cursive;
+  color: #4f6b5b;
+}
+
+strong {
+  font-family: "JosefinSans", sans-serif;
+  color: #c3b0c6;
+  font-weight: 900;
+}
+
+li {
   text-decoration: none;
   list-style: none;
-}
-
-body {
-  background: #c3b0c6 url("https://i.ibb.co/6nDWZdP/sfondo-fiori.jpg");
-  background-repeat: repeat;
-}
-
-h1 {
-  font-family: "Tangerine", cursive;
-  color: #4f6b5b;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  color: #4f6b5b;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 header {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-header .navbar-menu {
-  width: 100%;
-  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  padding-left: 15px;
-  padding-right: 15px;
-  z-index: 9999;
+  flex-direction: row;
+  background-color: #e1d3d2;
+}
+header .navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 991.98px) {
+  header .navbar-menu {
+    display: none;
+  }
+}
+header .navbar-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  color: #4f6b5b;
+  position: relative;
+}
+header .navbar-menu ul li {
+  line-height: 0.4rem;
+  padding: 5px;
+  border-bottom: 1px solid transparent;
+  transition: 300ms;
+}
+header .navbar-menu ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+header .navbar-menu ul li:hover {
+  border-bottom: 1px solid #4f6b5b;
+  cursor: pointer;
+}
+header .navbar-menu .menu-left,
+header .navbar-menu .menu-right {
+  font-size: 0.4rem;
+  font-weight: 700;
 }
 header .navbar-menu .logo {
-  height: 100%;
+  margin: 0 50px;
+}
+header .navbar-menu .logo h1 {
+  font-family: "Right Strongline", cursive;
+  font-size: 1.2rem;
+}
+header .hamburger {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  header .hamburger {
+    height: 100%;
+    color: #4f6b5b;
+    display: flex;
+  }
+}
+header .hamburger .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  padding-right: 0px;
 }
-header .navbar-menu .logo h1 {
-  width: 150px;
-  font-size: 30px;
+header .hamburger .logo h1 {
+  font-family: "Right Strongline", cursive;
+  font-size: clamp(0.9rem, 3vw, 3rem);
+  margin-bottom: 0;
 }
-header .navbar-menu .logo small {
-  font-size: 20px;
-}
-header .navbar-menu .hamburger {
+header .hamburger .icon-menu-wrap {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  height: 100%;
-  color: #4f6b5b;
-  padding-left: 0px;
 }
-header .navbar-menu .hamburger > div {
-  width: 76px;
+header .hamburger .icon-menu-wrap .icon-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   transition: 300ms;
+  width: 30px;
+  height: 30px;
+}
+header .hamburger .icon-menu-wrap .icon-menu:hover {
+  background-color: #c3b0c6;
   cursor: pointer;
-  padding: 5px 0px;
 }
-header .navbar-menu .hamburger > div:hover {
-  background-color: #e1d3d2;
+header .hamburger .icon-menu-wrap .icon-menu--bar {
+  width: 22px;
+  height: 2px;
+  background-color: #4f6b5b;
+  position: relative;
 }
-header .navbar-menu .hamburger > div .menu-text {
-  font-size: 14px;
-  margin-left: 5px;
-  margin-top: -2px;
+header .hamburger .icon-menu-wrap .icon-menu--bar::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #4f6b5b;
+  top: -5px;
 }
-header .navbar-menu .hamburger > div .modal-menu {
+header .hamburger .icon-menu-wrap .icon-menu--bar::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #4f6b5b;
+  top: 5px;
+}
+header .modal-menu-wrap {
   display: none;
-}
-header .hero {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  background-color: #c3b0c6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+@media (min-width: 768px) {
+  header .modal-menu-wrap {
+    display: none;
+  }
+}
+header .modal-menu-wrap .modal-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  position: relative;
+  margin-top: 50px;
 }
-header .hero__testo {
+header .modal-menu-wrap .modal-logo h1 {
+  color: #4f6b5b;
+  font-family: "Right Strongline", cursive;
+  font-size: clamp(1rem, 5vw, 4rem);
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+header .modal-menu-wrap .modal-menu-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 999;
+  font-size: clamp(0.5rem, 1.8vw, 2.5rem);
+  margin-top: 100px;
 }
-@media (max-width: 991.98px) {
-  header .hero__testo {
-    position: absolute;
-    bottom: 50px;
-  }
+header .modal-menu-wrap .modal-menu-list li {
+  margin-bottom: 40px;
+  color: #4f6b5b;
 }
-header .hero__testo h1 {
-  font-size: clamp(50px, 8vw, 180px);
-  font-weight: 400;
-  color: #fff;
+header .modal-menu-wrap .modal-menu-close {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  padding: 10px;
+  cursor: pointer;
 }
-header .hero__testo h1 small {
-  font-size: clamp(30px, 5vw, 120px);
+header .modal-menu-wrap .modal-menu-close .close-menu-icon {
+  width: 22px;
+  height: 2px;
+  background-color: #4f6b5b;
+  transform: rotate(45deg);
 }
-header .hero__testo p {
-  font-family: "Tangerine", cursive;
-  font-size: 50px;
-  margin-top: -50px;
-  color: #fff;
+header .modal-menu-wrap .modal-menu-close .close-menu-icon::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #4f6b5b;
+  transform: rotate(-90deg);
 }
-@media (max-width: 991.98px) {
-  header .hero__testo p {
-    font-size: 30px;
-    margin-top: -30px;
-  }
+header .active {
+  display: block;
 }
-header .hero__image-gabriele {
-  height: 85%;
-  width: auto;
+
+#hero {
+  width: 100%;
+  height: 100%;
+  background-color: #e1d3d2;
+  padding-top: 70px;
+  position: relative;
+}
+#hero::before {
+  content: "";
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-@media (max-width: 991.98px) {
-  header .hero__image-gabriele {
-    left: -50px;
-  }
+#hero .hero {
+  flex-wrap: nowrap;
 }
-header .hero__image-caterina {
-  height: 75%;
-  width: auto;
+#hero .hero--text {
+  padding-top: 50px;
+}
+#hero .hero--text--title {
+  position: relative;
+}
+#hero .hero--text--title h1 {
+  font-size: clamp(1.4rem, 15vw, 2.2rem);
+  color: #222;
+  line-height: 1;
+  letter-spacing: 0.3rem;
+  margin-bottom: 50px;
+  z-index: 90;
+}
+#hero .hero--text--title::before {
+  content: "&";
+  color: #9db9aa;
+  opacity: 0.18;
+  font-size: 11rem;
+  font-family: "PlayfairDisplay-Bold";
   position: absolute;
-  bottom: 0;
+  line-height: 0;
+  top: 50%;
   right: 0;
+  transform: translateY(-50%);
+  z-index: 0;
 }
-@media (max-width: 991.98px) {
-  header .hero__image-caterina {
-    transform: rotateY(180deg);
-    left: -80px;
-  }
+#hero .hero--image img {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero p {
+  font-size: clamp(0.7rem, 7vw, 1rem);
+}
+#hero .data-matrimonio {
+  color: #c3b0c6;
 }
 
 main {
   width: 100%;
-  height: 700px;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
-@media (max-width: 991.98px) {
-  main {
-    height: 400px;
-  }
-}
-main .countdown-wrapper {
+main #countdown-wrapper {
   position: relative;
-  padding: 50px 70px;
-  width: 70%;
-  border: 1px solid #c3b0c6;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
-@media (max-width: 767.98px) {
-  main .countdown-wrapper {
-    padding: 30px 50px;
-  }
+main #countdown-wrapper::before {
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: #c3b0c6;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-main .countdown-wrapper #countdown {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-main .countdown-wrapper #countdown .manca-poco {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-size: clamp(30px, 8vw, 150px);
-  font-family: "Poppins", sans-serif;
+main #countdown-wrapper .manca-poco {
+  font-size: clamp(1rem, 2.3vw, 3rem);
+  color: #c3b0c6;
+  font-weight: 700;
+  line-height: 0.8rem;
   white-space: nowrap;
+  margin-bottom: 20px;
 }
-main .countdown-wrapper #countdown .manca-poco span {
+main #countdown-wrapper #countdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+main #countdown-wrapper #countdown .timer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+main #countdown-wrapper #countdown .timer span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
-  font-size: clamp(30px, 8vw, 150px);
-  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.3rem, 3vw, 5rem);
+  font-family: "JosefinSans", sans-serif;
   white-space: nowrap;
 }
-main .countdown-wrapper #countdown .manca-poco span > div {
-  font-size: clamp(16px, 3vw, 20px);
+main #countdown-wrapper #countdown .timer span > div {
+  font-size: clamp(0.7rem, 1.2vw, 1.3rem);
 }
 @media (max-width: 767.98px) {
-  main .countdown-wrapper #countdown .manca-poco span > div {
+  main #countdown-wrapper #countdown .timer span > div {
     display: none;
   }
 }
-main .countdown-wrapper #countdown .manca-poco span.secondi {
-  width: clamp(40px, 11vw, 400px);
+main #countdown-wrapper #countdown .timer span.secondi {
+  width: clamp(1rem, 3vw, 3rem);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-main .countdown-wrapper .save-the-date {
-  font-size: clamp(21px, 5vw, 45px);
-  font-family: "Poppins", sans-serif;
+main #countdown-wrapper .save-the-date {
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  font-family: "JosefinSans", sans-serif;
   background-color: #fff;
   color: #c3b0c6;
   position: absolute;
@@ -16361,7 +16444,98 @@ main .countdown-wrapper .save-the-date {
   z-index: 999;
 }
 @media (max-width: 767.98px) {
-  main .countdown-wrapper .save-the-date {
+  main #countdown-wrapper .save-the-date {
     top: -30px;
   }
+}
+main .chi-siamo {
+  width: 100%;
+  background-color: #9db9aa;
+  padding-top: 150px;
+  padding-bottom: 25px;
+  position: relative;
+}
+main .chi-siamo::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  background-color: #9db9aa;
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+}
+main .chi-siamo--text {
+  padding-bottom: 50px;
+}
+main .chi-siamo--title {
+  font-size: 1.7rem;
+  color: #4f6b5b;
+}
+main .chi-siamo--description {
+  font-size: clamp(0.6rem, 1.6vw, 1rem);
+}
+main .chi-siamo--description strong {
+  color: #4f6b5b;
+}
+@media (max-width: 991.98px) {
+  main .chi-siamo--image {
+    margin-bottom: 30px;
+  }
+}
+main .chi-siamo--image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -20px top;
+     object-position: -20px top;
+}
+main .photo-wall-wrap {
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 999;
+}
+main .photo-wall-wrap .photo-wall {
+  display: grid;
+  grid-template-rows: minmax(200px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px 25px;
+  grid-template-areas: "photo-1 photo-1 photo-2" "photo-1 photo-1 photo-3" "photo-4 photo-5 photo-6";
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 991.98px) {
+  main .photo-wall-wrap .photo-wall {
+    grid-template-areas: "photo-1 photo-1" "photo-1 photo-1" "photo-2 photo-3" "photo-4 photo-5" "photo-6 photo-6" "photo-6 photo-6";
+  }
+}
+@media (max-width: 575.98px) {
+  main .photo-wall-wrap .photo-wall {
+    grid-template-areas: "photo-1" "photo-2" "photo-3" "photo-4" "photo-5" "photo-6";
+    grid-gap: 15px 15px;
+  }
+}
+main .photo-wall-wrap .photo-wall img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .photo-wall-wrap .photo-wall .photo-1 {
+  grid-area: photo-1;
+}
+main .photo-wall-wrap .photo-wall .photo-2 {
+  grid-area: photo-2;
+}
+main .photo-wall-wrap .photo-wall .photo-3 {
+  grid-area: photo-3;
+}
+main .photo-wall-wrap .photo-wall .photo-4 {
+  grid-area: photo-4;
+}
+main .photo-wall-wrap .photo-wall .photo-5 {
+  grid-area: photo-5;
+}
+main .photo-wall-wrap .photo-wall .photo-6 {
+  grid-area: photo-6;
 }

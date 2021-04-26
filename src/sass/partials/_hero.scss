@@ -1,0 +1,82 @@
+#hero {
+  width: 100%;
+  height: 100%;
+  background-color: $quarto;
+  padding-top: 70px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hero {
+    flex-wrap: nowrap;
+
+    &--text {
+      padding-top: 50px;
+
+      &--title {
+        position: relative;
+
+        h1 {
+          font-size: clamp(1.4rem, 15vw, 2.2rem);
+          color: #222;
+          line-height: 1;
+          letter-spacing: 0.3rem;
+          margin-bottom: 50px;
+          z-index: 90;
+        }
+
+        &::before {
+          content: '&';
+          color: $secondo;
+          opacity: 0.18;
+          font-size: 11rem;
+          font-family: 'PlayfairDisplay-Bold';
+          position: absolute;
+          line-height: 0;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          z-index: 0;
+        }
+      }
+    }
+
+    &--image {
+      img {
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  p {
+    font-size: clamp(0.7rem, 7vw, 1rem);
+  }
+
+  .data-matrimonio {
+    color: $terzo;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//END
