@@ -16338,7 +16338,7 @@ header .active {
 }
 #hero .hero--text--title::before {
   content: "&";
-  color: #9db9aa;
+  color: #bedbcc7a;
   opacity: 0.18;
   font-size: 11rem;
   font-family: "PlayfairDisplay-Bold";
@@ -16450,7 +16450,7 @@ main #countdown-wrapper .save-the-date {
 }
 main .chi-siamo {
   width: 100%;
-  background-color: #9db9aa;
+  background-color: #bedbcc7a;
   padding-top: 150px;
   padding-bottom: 25px;
   position: relative;
@@ -16459,7 +16459,7 @@ main .chi-siamo::after {
   content: "";
   width: 100%;
   height: 200px;
-  background-color: #9db9aa;
+  background-color: #bedbcc7a;
   position: absolute;
   bottom: -200px;
   left: 0;
