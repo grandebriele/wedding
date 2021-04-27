@@ -16092,13 +16092,13 @@ html {
   font-family: "Right Strongline";
   src: url("/fonts/Right Strongline.ttf?9942dc412bad7f98c625989f9fc54acd");
   font-family: "Josefin Sans";
-  src: url(/fonts/JosefinSans-ThinItalic.ttf?89302acc0a1111132060ca65fbd89b90);
-  src: url(/fonts/JosefinSans-ThinItalic.eot?2308ac4dff1db49479a131f847405f20) format("embedded-opentype"), url(/fonts/JosefinSans-ThinItalic.woff2?a61e32ec82caec54161b75ab4f10dcaf) format("woff2"), url(/fonts/JosefinSans-ThinItalic.woff?998176cbd2e52c0c22e72ca0e883c0e4) format("woff"), url(/fonts/JosefinSans-ThinItalic.svg?77bd5e576921934d9e26b0f437ced262) format("svg");
-  font-family: "Playfair Display";
-  src: url(/fonts/PlayfairDisplay-Bold.ttf?34a18e8fb1c1542162f56918f7f61e3c);
-  src: url(/fonts/PlayfairDisplay-Bold.eot?d431986eded124078464a9d0cb7ac986) format("embedded-opentype"), url(/fonts/PlayfairDisplay-Bold.woff2?e0a4d024cd984eb44fba1027932dc5e4) format("woff2"), url(/fonts/PlayfairDisplay-Bold.woff?4fe8e9c277fa34013fe2d9a8dde68d7b) format("woff"), url(/fonts/PlayfairDisplay-Bold.svg?4c69f6be6c834ee4cbee5eca493971be) format("svg");
-  font-family: "PlayfairDisplay-Regular";
-  src: url(/fonts/PlayfairDisplay-Regular.ttf?ab37fd8f8b17807ebb1ee531780891bc) format("truetype");
+  src: url("/fonts/Josefin Sans.ttf?89302acc0a1111132060ca65fbd89b90");
+  src: url("/fonts/Josefin Sans.eot?2308ac4dff1db49479a131f847405f20") format("embedded-opentype"), url("/fonts/Josefin Sans.woff2?a61e32ec82caec54161b75ab4f10dcaf") format("woff2"), url("/fonts/Josefin Sans.woff?998176cbd2e52c0c22e72ca0e883c0e4") format("woff"), url("/fonts/Josefin Sans.svg?77bd5e576921934d9e26b0f437ced262") format("svg");
+  font-family: "Playfair Display Bold";
+  src: url("/fonts/Playfair Display Bold.ttf?34a18e8fb1c1542162f56918f7f61e3c");
+  src: url("/fonts/Playfair Display Bold.eot?d431986eded124078464a9d0cb7ac986") format("embedded-opentype"), url("/fonts/Playfair Display Bold.woff2?e0a4d024cd984eb44fba1027932dc5e4") format("woff2"), url("/fonts/Playfair Display Bold.woff?4fe8e9c277fa34013fe2d9a8dde68d7b") format("woff"), url("/fonts/Playfair Display Bold.svg?4c69f6be6c834ee4cbee5eca493971be") format("svg");
+  font-family: "Playfair Display Regular";
+  src: url("/fonts/Playfair Display Regular.ttf?ab37fd8f8b17807ebb1ee531780891bc") format("truetype");
 }
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -16110,7 +16110,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display Bold", serif;
   color: #4f6b5b;
 }
 
