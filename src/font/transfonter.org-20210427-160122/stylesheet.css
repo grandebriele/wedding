@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('font/PlayfairDisplay-Bold.eot');
+    src: url('font/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('font/PlayfairDisplay-Bold.woff') format('woff'),
+        url('font/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

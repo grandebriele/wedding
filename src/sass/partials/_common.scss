@@ -7,8 +7,23 @@
 @font-face {
   font-family: 'Right Strongline';
   src: url('../../font/Right Strongline.ttf');
-  font-family: 'JosefinSans';
-  src: url('../../font/JosefinSans.ttf');
+
+  font-family: 'Josefin Sans';
+  src: url('../../font/JosefinSans-ThinItalic.ttf');
+  src: url('../../font/JosefinSans-ThinItalic.eot') format('embedded-opentype'),
+      url('../../font/JosefinSans-ThinItalic.woff2') format('woff2'),
+      url('../../font/JosefinSans-ThinItalic.woff') format('woff'),
+      url('../../font/JosefinSans-ThinItalic.svg#JosefinSans-ThinItalic') format('svg');
+
+  font-family: 'Playfair Display';
+  src: url('../../font/PlayfairDisplay-Bold.ttf');
+  src: url('../../font/PlayfairDisplay-Bold.eot') format('embedded-opentype'),
+      url('../../font/PlayfairDisplay-Bold.woff2') format('woff2'),
+      url('../../font/PlayfairDisplay-Bold.woff') format('woff'),
+      url('../../font/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('../../font/PlayfairDisplay-Regular.ttf') format("truetype");
 }
 
 body {
