@@ -1,8 +1,12 @@
 header {
-  padding-top: 30px;
+  width: 100%;
+  padding-top: 20px;
   padding-bottom: 20px;
   @include my-flex(center, center, row);
   background-color: $quarto;
+  position: fixed;
+  border-bottom: 1px solid $quarto;
+  z-index: 9999999999999999;
 
   .navbar-menu {
     @include my-flex(center, center, row);
@@ -153,6 +157,11 @@ header {
         li {
           margin-bottom: 40px;
           color: $primo;
+
+          a {
+            text-decoration: none;
+            color: $primo;
+          }
         }
       }
 

@@ -16129,13 +16129,17 @@ li {
 }
 
 header {
-  padding-top: 30px;
+  width: 100%;
+  padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background-color: #e1d3d2;
+  position: fixed;
+  border-bottom: 1px solid #e1d3d2;
+  z-index: 10000000000000000;
 }
 header .navbar-menu {
   display: flex;
@@ -16287,6 +16291,10 @@ header .modal-menu-wrap .modal-menu-list li {
   margin-bottom: 40px;
   color: #4f6b5b;
 }
+header .modal-menu-wrap .modal-menu-list li a {
+  text-decoration: none;
+  color: #4f6b5b;
+}
 header .modal-menu-wrap .modal-menu-close {
   position: absolute;
   top: 35px;
@@ -16330,6 +16338,7 @@ header .active {
 }
 #hero .hero {
   flex-wrap: nowrap;
+  margin-top: 150px;
 }
 #hero .hero--text {
   padding-top: 50px;
