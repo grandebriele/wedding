@@ -16110,12 +16110,12 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "PlayfairDisplay-Bold", cursive;
+  font-family: "Playfair Display", serif;
   color: #4f6b5b;
 }
 
 strong {
-  font-family: "JosefinSans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #c3b0c6;
   font-weight: 900;
 }
@@ -16421,7 +16421,7 @@ main #countdown-wrapper #countdown .timer span {
   align-items: flex-start;
   flex-direction: column;
   font-size: clamp(1.3rem, 3vw, 5rem);
-  font-family: "JosefinSans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   white-space: nowrap;
 }
 main #countdown-wrapper #countdown .timer span > div {
@@ -16441,7 +16441,7 @@ main #countdown-wrapper #countdown .timer span.secondi {
 }
 main #countdown-wrapper .save-the-date {
   font-size: clamp(0.8rem, 2vw, 2rem);
-  font-family: "JosefinSans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   background-color: #fff;
   color: #c3b0c6;
   position: absolute;
