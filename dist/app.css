@@ -16578,6 +16578,7 @@ main #mappa-wrap .mappa-title p {
 }
 main #mappa-wrap .mappa {
   width: 100%;
+  margin-bottom: 50px;
 }
 main #mappa-wrap .mappa--maps {
   width: 100%;
