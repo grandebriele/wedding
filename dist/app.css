@@ -16157,18 +16157,20 @@ header .navbar-menu ul {
   color: #4f6b5b;
   position: relative;
 }
-header .navbar-menu ul li {
+header .navbar-menu ul li a {
+  text-decoration: none;
+  color: #4f6b5b;
   line-height: 0.4rem;
   padding: 5px;
   border-bottom: 1px solid transparent;
   transition: 300ms;
 }
-header .navbar-menu ul li:not(:last-child) {
-  margin-right: 1rem;
-}
-header .navbar-menu ul li:hover {
+header .navbar-menu ul li a:hover {
   border-bottom: 1px solid #4f6b5b;
   cursor: pointer;
+}
+header .navbar-menu ul li:not(:last-child) {
+  margin-right: 1rem;
 }
 header .navbar-menu .menu-left,
 header .navbar-menu .menu-right {
@@ -16559,8 +16561,12 @@ main #mappa-wrap {
   width: 100%;
 }
 main #mappa-wrap .mappa-title {
-  width: 100%;
   margin-bottom: 50px;
+}
+@media (max-width: 991.98px) {
+  main #mappa-wrap .mappa-title {
+    margin-bottom: 20px;
+  }
 }
 main #mappa-wrap .mappa-title i {
   margin-bottom: 30px;
@@ -16577,7 +16583,6 @@ main #mappa-wrap .mappa-title p {
   font-size: clamp(0.4rem, 2vw, 0.7rem);
 }
 main #mappa-wrap .mappa {
-  width: 100%;
   margin-bottom: 50px;
 }
 main #mappa-wrap .mappa--maps {
@@ -16587,16 +16592,16 @@ main #mappa-wrap .mappa--maps {
 main #mappa-wrap .mappa .indirizzo {
   padding-top: 30px;
   padding-bottom: 30px;
-  font-size: 0.8rem;
 }
 main #mappa-wrap .mappa .indirizzo i {
-  margin-bottom: 30px;
   color: #c3b0c6;
 }
 main #mappa-wrap .mappa .indirizzo p {
   margin-bottom: 0px;
 }
 main #mappa-wrap .mappa .indirizzo a {
+  font-size: 0.8rem;
   color: #4f6b5b;
   display: block;
+  margin-bottom: 30px;
 }

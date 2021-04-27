@@ -58,7 +58,23 @@ $(document).ready(function () {
     $('.nav-menu-wrapper, #hero, main, footer').show();
     $(".modal-menu-wrap").removeClass("active");
   });
-});
+  $('.modal-menu-wrap .chi-siamo-modal').click(function () {
+    $('.nav-menu-wrapper, #hero, main, footer').show();
+    $(".modal-menu-wrap").removeClass("active");
+  });
+  $('.modal-menu-wrap .location-modal').click(function () {
+    $('.nav-menu-wrapper, #hero, main, footer').show();
+    $(".modal-menu-wrap").removeClass("active");
+  });
+  $('.modal-menu-wrap .conferma-modal').click(function () {
+    $('.nav-menu-wrapper, #hero, main, footer').show();
+    $(".modal-menu-wrap").removeClass("active");
+  });
+  $('.modal-menu-wrap .regalo-modal').click(function () {
+    $('.nav-menu-wrapper, #hero, main, footer').show();
+    $(".modal-menu-wrap").removeClass("active");
+  });
+}); // END
 
 /***/ }),
 

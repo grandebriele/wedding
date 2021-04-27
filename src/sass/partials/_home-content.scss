@@ -223,8 +223,11 @@ main {
     width: 100%;
 
     .mappa-title {
-      width: 100%;
       margin-bottom: 50px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
 
       i {
         margin-bottom: 30px;
@@ -245,7 +248,6 @@ main {
     }
 
     .mappa {
-      width: 100%;
       margin-bottom: 50px;
 
       &--maps {
@@ -256,10 +258,8 @@ main {
       .indirizzo {
         padding-top: 30px;
         padding-bottom: 30px;
-        font-size: 0.8rem;
 
         i {
-          margin-bottom: 30px;
           color: $terzo;
         }
 
@@ -268,8 +268,10 @@ main {
         }
 
         a {
+          font-size: 0.8rem;
           color: $primo;
           display: block;
+          margin-bottom: 30px;
         }
       }
     }
