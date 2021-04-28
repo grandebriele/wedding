@@ -16110,6 +16110,10 @@ h5 {
   color: #4f6b5b;
 }
 
+h1 {
+  font-size: clamp(1.2rem, 4vw, 1.9rem);
+}
+
 strong {
   font-family: "Josefin Sans", sans-serif;
   color: #c3b0c6;
@@ -16148,7 +16152,7 @@ header .navbar-menu {
   align-items: center;
   flex-direction: row;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   header .navbar-menu {
     display: none;
   }
@@ -16187,12 +16191,12 @@ header .navbar-menu .logo {
 }
 header .navbar-menu .logo h1 {
   font-family: "Right Strongline", cursive;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 2vw, 2rem);
 }
 header .hamburger {
   display: none;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   header .hamburger {
     height: 100%;
     color: #4f6b5b;
@@ -16488,7 +16492,6 @@ main .chi-siamo--text {
   padding-bottom: 50px;
 }
 main .chi-siamo--title {
-  font-size: 1.7rem;
   color: #4f6b5b;
 }
 main .chi-siamo--description {
@@ -16583,7 +16586,6 @@ main #mappa-wrap .mappa-title i {
   color: #c3b0c6;
 }
 main #mappa-wrap .mappa-title h1 {
-  font-size: clamp(1.2rem, 4vw, 1.9rem);
   text-align: center;
 }
 main #mappa-wrap .mappa-title p {
@@ -16591,9 +16593,6 @@ main #mappa-wrap .mappa-title p {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: clamp(0.4rem, 2vw, 0.7rem);
-}
-main #mappa-wrap .mappa {
-  margin-bottom: 50px;
 }
 main #mappa-wrap .mappa--maps {
   width: 100%;
@@ -16614,4 +16613,25 @@ main #mappa-wrap .mappa .indirizzo a {
   color: #4f6b5b;
   display: block;
   margin-bottom: 30px;
+}
+main #conferma-presenza {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+main #conferma-presenza h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main #conferma-presenza a {
+  font-size: 0.8rem;
+  border: 1px solid #e1d3d2;
+  padding: 15px 25px;
+  color: #c3b0c6;
+  text-decoration: none;
+  transition: 300ms;
+  line-height: 1rem;
+}
+main #conferma-presenza a:hover {
+  background-color: #e1d3d2;
+  color: #fff;
 }

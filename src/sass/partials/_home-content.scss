@@ -105,7 +105,6 @@ main {
     }
 
     &--title {
-      font-size: 1.7rem;
       color: $primo;
     }
 
@@ -235,7 +234,6 @@ main {
       }
 
       h1 {
-        font-size: clamp(1.2rem, 4vw, 1.9rem);
         text-align: center;
       }
 
@@ -248,7 +246,6 @@ main {
     }
 
     .mappa {
-      margin-bottom: 50px;
 
       &--maps {
         width: 100%;
@@ -277,7 +274,31 @@ main {
     }
   }
 
+  #conferma-presenza {
 
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    a {
+      font-size: 0.8rem;
+      border: 1px solid $quarto;
+      padding: 15px 25px;
+      color: $terzo;
+      text-decoration: none;
+      transition: 300ms;
+      line-height: 1rem;
+
+      &:hover {
+        background-color: $quarto;
+        color: #fff;
+      }
+    }
+  }
 }
 
 
