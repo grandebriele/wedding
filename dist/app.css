@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500;700&family=Playfair+Display:wght@400;700;900&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -16078,7 +16080,8 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
-html {
+html,
+body {
   font-size: 32px;
 }
 
@@ -16119,6 +16122,12 @@ strong {
   font-family: "Josefin Sans", sans-serif;
   color: #c3b0c6;
   font-weight: 900;
+}
+
+p,
+a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
 }
 
 li {
