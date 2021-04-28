@@ -5,7 +5,7 @@ header {
   @include my-flex(center, center, row);
   background-color: $quarto;
   position: fixed;
-  border-bottom: 1px solid $quarto;
+  border-bottom: 1px solid $terzo;
   z-index: 9999999999999999;
 
   .navbar-menu {
@@ -74,7 +74,7 @@ header {
 
         h1 {
           font-family: 'Right Strongline', cursive;
-          font-size: clamp(0.9rem, 3vw, 3rem);
+          font-size: clamp(0.7rem, 2vw, 3rem);
           margin-bottom: 0;
         }
       }
@@ -126,7 +126,7 @@ header {
       display: none;
       width: 100vw;
       height: 100vh;
-      background-color: $terzo;
+      background-color: $quarto;
       position: fixed;
       top: 0;
       left: 0;
