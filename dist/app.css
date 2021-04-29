@@ -16635,3 +16635,6 @@ main #conferma-presenza a:hover {
   background-color: #e1d3d2;
   color: #fff;
 }
+main #regalo-di-nozze p {
+  font-size: clamp(0.5rem, 2vw, 0.7rem);
+}
