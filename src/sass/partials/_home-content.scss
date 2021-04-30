@@ -54,7 +54,7 @@ main {
           }
 
           &.secondi {
-            width: clamp(1rem, 3vw, 3rem);
+            //width: clamp(1rem, 3vw, 3rem);
             @include my-flex(center, flex-start, column);
           }
         }
@@ -139,7 +139,6 @@ main {
   // PHOTOWALL
 
   #photo-wall-wrap {
-    padding-bottom: 100px;
     position: relative;
     z-index: 999;
 
@@ -217,9 +216,18 @@ main {
   // * * * LOCATION * * *
 
   #mappa-wrap {
-    padding-top: 50px;
+    margin-top: 150px;
     padding-bottom: 50px;
     width: 100%;
+    background-color: $quarto;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 400px;
+      background-color: #fff;
+      position: absolute;
+    }
 
     .mappa-title {
       margin-bottom: 50px;
@@ -255,6 +263,11 @@ main {
       .indirizzo {
         padding-top: 30px;
         padding-bottom: 30px;
+        margin-bottom: 50px;
+
+        @include media-breakpoint-down(md) {
+          flex-direction: column;
+        }
 
         i {
           color: $terzo;
@@ -265,19 +278,19 @@ main {
         }
 
         a {
-          font-size: 0.8rem;
+          font-size: clamp(0.6rem, 2vw, 0.8rem);
           color: $primo;
           display: block;
-          margin-bottom: 30px;
+          margin-bottom: 15px;
         }
       }
     }
   }
 
   #conferma-presenza {
-
-    padding-top: 50px;
-    padding-bottom: 100px;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     h1 {
       text-align: center;
@@ -302,8 +315,47 @@ main {
 
 
   #regalo-di-nozze {
-    p {
-      font-size: clamp(0.5rem, 2vw, 0.7rem);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 100%;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .regalo-text {
+
+      padding: 100px 15px;
+      background-color: #fff9;
+      box-shadow: 0px 0px 30px 0px #777;
+
+      h1 {
+        z-index: 1;
+        position: relative;
+      }
+
+      p {
+        width: 60%;
+        text-align: center;
+        font-size: clamp(0.5rem, 2vw, 0.7rem);
+        z-index: 1;
+        position: relative;
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+      }
+    }
+
+    .overlay-image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #fff;
+      opacity: 0.6;
+      top: 0;
     }
   }
 }
