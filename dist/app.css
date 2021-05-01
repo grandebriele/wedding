@@ -16420,9 +16420,17 @@ footer .contatti {
 footer .contatti--gabriele, footer .contatti--caterina {
   padding: 15px;
 }
+footer .contatti--gabriele {
+  margin-right: 100px;
+}
+@media (max-width: 991.98px) {
+  footer .contatti--gabriele {
+    margin-right: 0;
+  }
+}
 footer .contatti p {
   font-size: clamp(0.7rem, 2vw, 1rem);
-  font-weight: 200;
+  font-weight: 200px;
 }
 @media (max-width: 767.98px) {
   footer .contatti {

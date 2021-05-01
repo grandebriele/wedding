@@ -21,9 +21,17 @@ footer {
       padding: 15px;
     }
 
+    &--gabriele {
+      margin-right: 100px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+      }
+    }
+
     p {
       font-size: clamp(0.7rem, 2vw, 1rem);
-      font-weight: 200;
+      font-weight: 200px;
     }
 
     @include media-breakpoint-down(sm) {
