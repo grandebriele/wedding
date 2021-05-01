@@ -16404,6 +16404,7 @@ header .active {
 footer {
   padding-top: 150px;
   padding-bottom: 150px;
+  position: relative;
 }
 footer h1 {
   margin-bottom: 50px;
@@ -16427,6 +16428,14 @@ footer .contatti p {
   footer .contatti {
     flex-direction: column;
   }
+}
+footer img {
+  width: 40%;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotateX(180deg);
 }
 
 main {
