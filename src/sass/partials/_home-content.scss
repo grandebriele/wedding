@@ -263,7 +263,6 @@ main {
       .indirizzo {
         padding-top: 30px;
         padding-bottom: 30px;
-        margin-bottom: 50px;
 
         @include media-breakpoint-down(md) {
           flex-direction: column;
@@ -289,8 +288,8 @@ main {
 
   #conferma-presenza {
     width: 100%;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 
     h1 {
       text-align: center;
@@ -298,13 +297,15 @@ main {
     }
 
     a {
-      font-size: 0.8rem;
+      font-size: 0.4rem;
+      letter-spacing: 0.1rem;
       border: 1px solid $quarto;
       padding: 15px 25px;
       color: $terzo;
       text-decoration: none;
       transition: 300ms;
       line-height: 1rem;
+      text-transform: uppercase;
 
       &:hover {
         background-color: $quarto;

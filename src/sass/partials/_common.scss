@@ -6,7 +6,12 @@
 
 @font-face {
   font-family: 'Right Strongline';
+  src: url('https://www.dafontfree.io/download/right-strongline/?wpdmdl=76253');
   src: url('../../font/Right Strongline.ttf');
+  src: url('../../font/RightStrongline-Regular.eot');
+  src: url('../../font/RightStrongline-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../../font/RightStrongline-Regular.woff2') format('woff2'),
+      url('../../font/RightStrongline-Regular.woff') format('woff')
 }
 
 body {
@@ -44,5 +49,5 @@ li {
   text-decoration: none;
   list-style: none;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }

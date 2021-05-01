@@ -16093,7 +16093,10 @@ body {
 
 @font-face {
   font-family: "Right Strongline";
+  src: url("https://www.dafontfree.io/download/right-strongline/?wpdmdl=76253");
   src: url("/fonts/Right Strongline.ttf?9942dc412bad7f98c625989f9fc54acd");
+  src: url(/fonts/RightStrongline-Regular.eot?1c00650cf12c970e307363db5c77fe50);
+  src: url(/fonts/RightStrongline-Regular.eot?1c00650cf12c970e307363db5c77fe50) format("embedded-opentype"), url(/fonts/RightStrongline-Regular.woff2?4b9cbcbe621fbfd8bb2c3b9c9e96ba6c) format("woff2"), url(/fonts/RightStrongline-Regular.woff?103ead00a41956769ed856f96956f545) format("woff");
 }
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -16130,7 +16133,7 @@ li {
   text-decoration: none;
   list-style: none;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 header {
@@ -16280,7 +16283,7 @@ header .modal-menu-wrap .modal-logo {
 header .modal-menu-wrap .modal-logo h1 {
   color: #4f6b5b;
   font-family: "Right Strongline", cursive;
-  font-size: clamp(1rem, 5vw, 4rem);
+  font-size: clamp(0.6rem, 2vw, 1rem);
   margin-bottom: 0;
   margin-top: 30px;
 }
@@ -16295,10 +16298,18 @@ header .modal-menu-wrap .modal-menu-list {
 header .modal-menu-wrap .modal-menu-list li {
   margin-bottom: 40px;
   color: #4f6b5b;
+  padding: 10px 15px 6px;
 }
 header .modal-menu-wrap .modal-menu-list li a {
   text-decoration: none;
   color: #4f6b5b;
+}
+header .modal-menu-wrap .modal-menu-list .regalo-modal {
+  background-color: #4f6b5b;
+}
+header .modal-menu-wrap .modal-menu-list .regalo-modal a {
+  color: #fff;
+  font-weight: 400;
 }
 header .modal-menu-wrap .modal-menu-close {
   position: absolute;
@@ -16636,7 +16647,6 @@ main #mappa-wrap .mappa--maps {
 main #mappa-wrap .mappa .indirizzo {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 50px;
 }
 @media (max-width: 991.98px) {
   main #mappa-wrap .mappa .indirizzo {
@@ -16657,21 +16667,23 @@ main #mappa-wrap .mappa .indirizzo a {
 }
 main #conferma-presenza {
   width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 main #conferma-presenza h1 {
   text-align: center;
   margin-bottom: 30px;
 }
 main #conferma-presenza a {
-  font-size: 0.8rem;
+  font-size: 0.4rem;
+  letter-spacing: 0.1rem;
   border: 1px solid #e1d3d2;
   padding: 15px 25px;
   color: #c3b0c6;
   text-decoration: none;
   transition: 300ms;
   line-height: 1rem;
+  text-transform: uppercase;
 }
 main #conferma-presenza a:hover {
   background-color: #e1d3d2;

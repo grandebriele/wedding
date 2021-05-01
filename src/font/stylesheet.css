@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Right Strongline';
+    src: url('RightStrongline-Regular.eot');
+    src: url('RightStrongline-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RightStrongline-Regular.woff2') format('woff2'),
+        url('RightStrongline-Regular.woff') format('woff'),
+        url('RightStrongline-Regular.svg#RightStrongline-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
