@@ -2,10 +2,14 @@ footer {
   padding-top: 150px;
   padding-bottom: 150px;
 
-  h3 {
+  h1 {
     margin-bottom: 50px;
     color: $terzo;
     text-align: center;
+  }
+
+  h5 {
+    font-size: clamp(0.7rem, 2vw, 1rem);
   }
 
   .contatti {
@@ -17,6 +21,7 @@ footer {
     }
 
     p {
+      font-size: clamp(0.7rem, 2vw, 1rem);
       font-weight: 200;
     }
 

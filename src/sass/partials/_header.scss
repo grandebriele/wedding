@@ -166,10 +166,9 @@ header {
         }
 
         .regalo-modal {
-          background-color: $primo;
+          border: 1px solid $primo;
 
           a {
-            color: #fff;
             font-weight: 400;
           }
         }
