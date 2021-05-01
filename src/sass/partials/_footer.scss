@@ -32,7 +32,8 @@ footer {
     a {
       font-size: clamp(0.7rem, 2vw, 1rem);
       font-weight: 200px;
-      text-decoration: none;
+      text-decoration: underline;
+      color: $primo;
     }
 
     @include media-breakpoint-down(sm) {

@@ -16431,7 +16431,8 @@ footer .contatti--gabriele {
 footer .contatti a {
   font-size: clamp(0.7rem, 2vw, 1rem);
   font-weight: 200px;
-  text-decoration: none;
+  text-decoration: underline;
+  color: #4f6b5b;
 }
 @media (max-width: 767.98px) {
   footer .contatti {
@@ -16685,6 +16686,7 @@ main #mappa-wrap .mappa .indirizzo a {
   color: #4f6b5b;
   display: block;
   margin-bottom: 15px;
+  text-decoration: underline;
 }
 main #conferma-presenza {
   width: 100%;
