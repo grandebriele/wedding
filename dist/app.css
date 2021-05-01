@@ -16428,9 +16428,10 @@ footer .contatti--gabriele {
     margin-right: 0;
   }
 }
-footer .contatti p {
+footer .contatti a {
   font-size: clamp(0.7rem, 2vw, 1rem);
   font-weight: 200px;
+  text-decoration: none;
 }
 @media (max-width: 767.98px) {
   footer .contatti {

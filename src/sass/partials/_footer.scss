@@ -29,9 +29,10 @@ footer {
       }
     }
 
-    p {
+    a {
       font-size: clamp(0.7rem, 2vw, 1rem);
       font-weight: 200px;
+      text-decoration: none;
     }
 
     @include media-breakpoint-down(sm) {
